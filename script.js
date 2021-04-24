@@ -14,7 +14,7 @@ let conversionTable = [
 
 // let massTable = [
 
-];
+// ];
 
 function convertAtoB() {
     let m = conversionTable[column1.selectedIndex][column2.selectedIndex].m;
