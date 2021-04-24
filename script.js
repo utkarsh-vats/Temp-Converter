@@ -12,6 +12,10 @@ let conversionTable = [
     [{m: 1.25, c: 0},         {m: 2.25, c: 32},     {m: 1.25, c: 273.15},       {m: 2.25, c: 273.15}, {m: 1, c: 0}]             //reaumur
 ];
 
+// let massTable = [
+
+];
+
 function convertAtoB() {
     let m = conversionTable[column1.selectedIndex][column2.selectedIndex].m;
     let c = conversionTable[column1.selectedIndex][column2.selectedIndex].c;

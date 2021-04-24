@@ -10,32 +10,42 @@
 </head>
 <body>
     <div class="container">
-        <div class="column">
+        <div class="unit-selecter">
             <div class="custom-select">
-                <select id="col1" onchange="convertBtoA()">
-                    <option value="0">Celsius</option>
-                    <option value="1">Fahrenheit</option>
-                    <option value="2">Kelvin</option>
-                    <option value="3">Rankine</option>
-                    <option value="4">Réaumur</option>
+                <select class="col-sel" id="unit-select">
+                    <option value="0">Temperature</option>
                 </select>
-            </div>
-            <div class="custom-input">
-                <input type="text" id="col1-input" oninput="convertAtoB()" value="0">
             </div>
         </div>
-        <div class="column">
-            <div class="custom-select">
-                <select id="col2" onchange="convertAtoB()">
-                    <option value="0">Celsius</option>
-                    <option value="1">Fahrenheit</option>
-                    <option value="2">Kelvin</option>
-                    <option value="3">Rankine</option>
-                    <option value="4">Réaumur</option>
-                </select>
+        <div class="column-wrap">
+            <div class="column">
+                <div class="custom-select">
+                    <select id="col1" class="col-sel border-less" onchange="convertAtoB()">
+                        <option value="0">Celsius</option>
+                        <option value="1">Fahrenheit</option>
+                        <option value="2">Kelvin</option>
+                        <option value="3">Rankine</option>
+                        <option value="4">Réaumur</option>
+                    </select>
+                </div>
+                <div class="custom-input">
+                    <input type="text" id="col1-input" oninput="convertAtoB()" value="0">
+                </div>
             </div>
-            <div class="custom-input">
-                <input type="text" id="col2-input" oninput="convertBtoA()">
+            <h1 class="equals">=</h1>
+            <div class="column">
+                <div class="custom-select">
+                    <select id="col2" class="col-sel border-less" onchange="convertBtoA()">
+                        <option value="0">Celsius</option>
+                        <option value="1">Fahrenheit</option>
+                        <option value="2">Kelvin</option>
+                        <option value="3">Rankine</option>
+                        <option value="4">Réaumur</option>
+                    </select>
+                </div>
+                <div class="custom-input">
+                    <input type="text" id="col2-input" oninput="convertBtoA()">
+                </div>
             </div>
         </div>
     </div>
